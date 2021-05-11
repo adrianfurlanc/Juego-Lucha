@@ -1,5 +1,10 @@
+
 let team1 = [];
 let team2 = [];
+
+let p1 = "";
+let p2 = "";
+
 
 const cambiaFase = (destino) => {
 

@@ -1,5 +1,5 @@
 
-class fighter {
+class Fighter {
 
     constructor(name, health, attack, defense, luck) {
         this.name = name;

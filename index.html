@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fighting Game</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <title>Document</title>
 
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 <body>
 
-    <section id="fase1"></section>
+    <section class="secvis" id="fase1">
+        <p class="textoBasico" onclick="cambiaFase('fase2')">PRESS START BUTTON</p>
+    </section>
 
-    <section id="fase2" style="display: none;" onclick="cambiarFase('fase2')"></section>
+    <section class="secvis" id="fase2" style="display:none">
 
-    <section id="fase3" style="display: none" onclick="cambiarFase('fase3')"></section>
+        <div class="luchadores">
+            <div class="avatar" id="1" onclick="chooseFighter(1)"><img class="picFighter" src="img/Pikachu.png"></div>
+            <div class="avatar" id="2" onclick="chooseFighter(2)"><img class="picFighter" src="img/Axel.png"></div>
+            <div class="avatar" id="3" onclick="chooseFighter(3)"><img class="picFighter" src="img/Donatello.png"></div>
+            <div class="avatar" id="4" onclick="chooseFighter(4)"><img class="picFighter" src="img/Goku.png"></div>
+        </div>
 
-    <section id="fase4" style="display: none;" onclick="cambiarFase('fase4')"></section>
+    </section>
 
-    <script src="js/fighter.js"></script>
+    <section class="secvis" id="fase3" style="display:none">
+        <div class="maquetaEquipos" id="equipos"></div>
+    </section>
+
+    <section class="secvis" id="fase4" style="display:none">
+        <div><img onclick="fighting()" src="img/start.png" alt="start"></div>
+    </section>
+
+
+    <script src="js/fighters.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
