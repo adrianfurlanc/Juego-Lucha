@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <section class="secvis" id="fase1">
+    <section class="secvis" id="fase1" style="display:none">
         <p class="textoBasico" onclick="cambiaFase('fase2')">PRESS START BUTTON</p>
     </section>
 
@@ -29,8 +29,19 @@
         <div class="maquetaEquipos" id="equipos"></div>
     </section>
 
-    <section class="secvis" id="fase4" style="display:none">
-        <div><img onclick="fighting()" src="img/start.png" alt="start"></div>
+    <section class="secvis" id="fase4">
+        <div class="combate">
+            <div class="player1">
+                <img class="imagePlayer" src="img/Pikachu.png" alt="">
+                <p class="pHealth">Vida: 300</p>
+                <button class="attackButton">ATTACK</button>
+            </div>
+            <div class="player1">
+                <img class ="imagePlayer" src="img/Greninja.png" alt="">
+                <p class="pHealth">Vida: 300</p>
+                <button class="attackButton">ATTACK</button>
+            </div>
+        </div>
     </section>
 
 

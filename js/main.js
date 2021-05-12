@@ -59,12 +59,10 @@ const llenaEquipos = () => {
     equipos.innerHTML = `
     <div class="teamCharacters">
         <div><img class="picFighter" src="img/${team1[0].name}.png" alt="luchador1"></div>
-        <div><img class="picFighter" src="img/${team1[1].name}.png" alt="luchador3"></div>
     </div>
     <div class="fightPanel"><img class="fotoVersus" src="img/fight.png" alt="lucha"></div>
     <div class="teamCharacters">
-        <div><img class="picFighter" src="img/${team2[0].name}.png" alt="luchador2"></div>
-        <div><img class="picFighter" src="img/${team2[1].name}.png" alt="luchador4"></div>
+        <div><img class="picFighter" src="img/${team1[1].name}.png" alt="luchador2"></div>
     </div>
     `;
 }
