@@ -39,8 +39,8 @@
 }
 
 .seleccionado{
-    border: 0.5em solid red;
-    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .maquetaEquipos {
