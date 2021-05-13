@@ -86,8 +86,7 @@ const p1Attack = () => {
 
         let message = document.getElementById("pOutput");
         // console.log(message);
-        // message.innerText("Player 1 wins the match");
-        console.log("Player 1 wins the match");
+        message.innerText = "Player 1 wins the match";
     }
 };
 
@@ -100,6 +99,10 @@ const p2Attack = () => {
     } else {
         let health = document.getElementById("p2Health");
         health.innerText = 'Vida: 0';
-        console.log("Player 2 wins the match");
+
+        let message = document.getElementById("pOutput");
+        // console.log(message);
+        message.innerText = "Player 2 wins the match";
+
     }
 };
