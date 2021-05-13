@@ -69,21 +69,30 @@ const fighting = () => {
 	luchadores.innerHTML = `<div class="combate" id="combateId">
     <div class="player1">
         <img class="imagePlayer" src="img/${team1[0].name}.png" alt="">
-        <p class="pHealth">Vida: ${team1[0].health}</p>
+        <p class="pHealth" id="p1Health" >Vida: ${team1[0].health}</p>
         <button class="attackButton" onclick="p1Attack()">ATTACK</button>
     </div>
     <div class="player1">
         <img class ="imagePlayer" src="img/${team1[1].name}.png" alt="">
-        <p class="pHealth"> Vida: ${team1[1].health}</p>
-        <button class="attackButton">ATTACK</button>
+        <p class="pHealth" id="p2Health"> Vida: ${team1[1].health}</p>
+        <button class="attackButton" onclick="p2Attack()">ATTACK</button>
     </div>
 </div>
 <p class="pMessage">Player 1 has won the match</p>`;
 
-	// console.log(combateId);
 };
 
 const p1Attack = () => {
 	p1.hit(p2);
-	console.log(p1);
+
+	let health = document.getElementById("p2Health");
+	health.innerText = `Vida: ${p2.health}`;
+
+};
+
+const p2Attack = () => {
+	p2.hit(p1);
+
+	let health = document.getElementById("p1Health");
+	health.innerText = `Vida: ${p1.health}`;
 };

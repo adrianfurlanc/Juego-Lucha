@@ -9,7 +9,7 @@ class Fighter {
 
 	hit(enemy) {
 		enemy.health -= 10;
-		console.log(enemy.health);
+		// console.log(enemy.health);
 	}
 
 	specialAttack(enemy) {}
