@@ -1,8 +1,8 @@
 let team1 = [];
 let team2 = [];
 
-let p1 = '';
-let p2 = '';
+let p1;
+let p2;
 
 const cambiaFase = (destino) => {
 	let arrFase = ['fase1', 'fase2', 'fase3', 'fase4'];
@@ -55,9 +55,12 @@ const llenaEquipos = () => {
     `;
 };
 
+
 const fighting = () => {
 	p1 = team1[0];
 	p2 = team1[1];
+
+	console.log(p1, p2);
 
 	console.log('empieza la lucha');
 
@@ -67,22 +70,20 @@ const fighting = () => {
     <div class="player1">
         <img class="imagePlayer" src="img/${team1[0].name}.png" alt="">
         <p class="pHealth">Vida: ${team1[0].health}</p>
-        <button class="attackButton">ATTACK</button>
+        <button class="attackButton" onclick="p1Attack()">ATTACK</button>
     </div>
     <div class="player1">
         <img class ="imagePlayer" src="img/${team1[1].name}.png" alt="">
-        <p class="pHealth">Vida: ${team1[1].health}</p>
+        <p class="pHealth"> Vida: ${team1[1].health}</p>
         <button class="attackButton">ATTACK</button>
     </div>
 </div>
 <p class="pMessage">Player 1 has won the match</p>`;
 
-	console.log(combateId);
+	// console.log(combateId);
+};
 
-	// p1.hit(p2);
-
-	// console.log(p1.vida,p2.vida);
-	// do{
-
-	// }while();
+const p1Attack = () => {
+	p1.hit(p2);
+	console.log(p1);
 };
