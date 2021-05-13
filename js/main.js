@@ -76,8 +76,8 @@ const fighting = () => {
 };
 
 const p1Attack = () => {
+    p1.hit(p2);
     if (p2.health >= 0) {
-        p1.hit(p2);
 
         let health = document.getElementById("p2Health");
         health.innerText = `Vida: ${p2.health}`;
@@ -99,13 +99,13 @@ const p1Attack = () => {
 };
 
 const p2Attack = () => {
+    p2.hit(p1);
     if (p1.health >= 0) {
-        p2.hit(p1);
 
         let health = document.getElementById("p1Health");
         health.innerText = `Vida: ${p1.health}`;
     } else {
-        let health = document.getElementById("p2Health");
+        let health = document.getElementById("p1Health");
         health.innerText = 'Vida: 0';
 
         let message = document.getElementById("pOutput");
