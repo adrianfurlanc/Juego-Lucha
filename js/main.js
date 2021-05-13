@@ -65,13 +65,13 @@ const fighting = () => {
 
 	luchadores.innerHTML = `<div class="combate" id="combateId">
     <div class="player1">
-        <img class="imagePlayer" src="img/Pikachu.png" alt="">
-        <p class="pHealth">Vida: 300</p>
+        <img class="imagePlayer" src="img/${team1[0].name}.png" alt="">
+        <p class="pHealth">Vida: ${team1[0].health}</p>
         <button class="attackButton">ATTACK</button>
     </div>
     <div class="player1">
-        <img class ="imagePlayer" src="img/Greninja.png" alt="">
-        <p class="pHealth">Vida: 300</p>
+        <img class ="imagePlayer" src="img/${team1[1].name}.png" alt="">
+        <p class="pHealth">Vida: ${team1[1].health}</p>
         <button class="attackButton">ATTACK</button>
     </div>
 </div>
