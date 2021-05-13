@@ -90,10 +90,13 @@
     height: 29em;
 }
 
-.pHealth {
+.pHealth, .pMessage {
     font-size: 3em;
     text-align: center;
+    color: white;
 }
+
+
 
 .attackButton {
     height: 3em;
