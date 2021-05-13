@@ -21,10 +21,8 @@ const cambiaFase = (destino) => {
 const chooseFighter = (fighter) => {
     if (p1 == "") {
         p1 = allPlayers[fighter]
-        console.log(p1);
     } else if (p2 == "") {
         p2 = allPlayers[fighter];
-        console.log(p2);
         llenaEquipos();
         cambiaFase('fase3');
         setTimeout(() => {
@@ -39,6 +37,8 @@ const chooseFighter = (fighter) => {
 
 
 const llenaEquipos = () => {
+
+
     let equipos = document.getElementById('equipos');
 
     equipos.innerHTML = `
@@ -69,7 +69,9 @@ const fighting = () => {
         <button class="attackButton" onclick="p2Attack()">ATTACK</button>
     </div>
 </div>
-<p class="pMessage" id="pOutput"></p>`;
+
+<p class="pMessage" id="pOutput"></p>;
+<p class="pMessage" id="pRetry" onclick="reset()"></p>`;
 
 };
 
@@ -85,8 +87,14 @@ const p1Attack = () => {
         health.innerText = 'Vida: 0';
 
         let message = document.getElementById("pOutput");
-        // console.log(message);
         message.innerText = "Player 1 wins the match";
+
+        setTimeout(() => {
+            let retry = document.getElementById("pRetry");
+            retry.innerText = "Would you like to play again?"
+        }, 2500);
+
+
     }
 };
 
@@ -101,8 +109,18 @@ const p2Attack = () => {
         health.innerText = 'Vida: 0';
 
         let message = document.getElementById("pOutput");
-        // console.log(message);
         message.innerText = "Player 2 wins the match";
+
+        setTimeout(() => {
+            let retry = document.getElementById("pRetry");
+            retry.innerText = "Would you like to play again?"
+        }, 2500);
 
     }
 };
+
+const reset = () => {
+    p1.health = 300;
+
+    cambiaFase("fase2");
+}
