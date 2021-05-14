@@ -1,10 +1,6 @@
-let team1 = [];
-let team2 = [];
 
 let p1 = "";
 let p2 = "";
-
-let result;
 
 const cambiaFase = (destino) => {
     let arrFase = ['fase1', 'fase2', 'fase3', 'fase4'];
@@ -120,7 +116,6 @@ const p2Attack = () => {
 };
 
 const reset = () => {
-    p1.health = 300;
-
     cambiaFase("fase2");
+   window.location.reload();
 }
