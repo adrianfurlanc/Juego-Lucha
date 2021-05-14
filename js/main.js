@@ -41,7 +41,7 @@ const llenaEquipos = () => {
     <div class="teamCharacters">
         <div><img class="picFighter" src="img/${p1.name}.png" alt="luchador1"></div>
     </div>
-    <div class="fightPanel"><img class="fotoVersus" src="img/fight.png" alt="lucha"></div>
+    <div class="fightPanel"><img class="photoVersus" src="img/fight.png" alt="lucha"></div>
     <div class="teamCharacters">
         <div><img class="picFighter" src="img/${p2.name}.png" alt="luchador2"></div>
     </div>
@@ -53,7 +53,7 @@ const fighting = () => {
 
     let fighters = document.getElementById('fase4');
 
-    fighters.innerHTML = `<div class="combate" id="combateId">
+    fighters.innerHTML = `<div class="combat" id="combateId">
     <div class="player1">
         <img class="imagePlayer" src="img/${p1.name}.png" alt="">
         <p class="pHealth" id="p1Health" >Vida: ${p1.health}</p>

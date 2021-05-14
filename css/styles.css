@@ -43,7 +43,7 @@
     filter: grayscale(100%);
 }
 
-.maquetaEquipos {
+.displayFighters {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,12 +64,12 @@
     margin: 6em;
 }
 
-.fotoVersus {
+.photoVersus {
     width: 30em;
     height: 18em;
 }
 
-.combate {
+.combat {
     background-color: black;
     width: 100%;
     height: 45em;
@@ -96,8 +96,6 @@
     color: white;
     background-color: black;
 }
-
-
 
 .attackButton {
     height: 3em;
