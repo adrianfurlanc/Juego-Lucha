@@ -66,7 +66,7 @@ const fighting = () => {
     </div>
 </div>
 
-<p class="pMessage" id="pOutput"></p>;
+<p class="pMessage" id="pOutput"></p>
 <p class="pMessage" id="pRetry" onclick="reset()"></p>`;
 
 };
@@ -116,6 +116,5 @@ const p2Attack = () => {
 };
 
 const reset = () => {
-    cambiaFase("fase2");
-   window.location.reload();
+    window.location.reload();
 }
