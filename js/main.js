@@ -118,3 +118,4 @@ const p2Attack = () => {
 const reset = () => {
     window.location.reload();
 }
+
