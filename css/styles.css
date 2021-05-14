@@ -14,11 +14,11 @@
     height: 100vh;
 }
 
-.textoBasico {
+.basicText {
     color: white;
 }
 
-.luchadores{
+.fighters{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -38,7 +38,7 @@
     transition: 0.3s;
 }
 
-.seleccionado{
+.selected {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }

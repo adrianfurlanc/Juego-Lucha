@@ -28,7 +28,7 @@ const chooseFighter = (fighter) => {
     }
 
     document.getElementById(fighter).onclick = '';
-    document.getElementById(fighter).className = 'seleccionado';
+    document.getElementById(fighter).className = 'selected';
 }
 
 
@@ -51,9 +51,9 @@ const llenaEquipos = () => {
 
 const fighting = () => {
 
-    let luchadores = document.getElementById('fase4');
+    let fighters = document.getElementById('fase4');
 
-    luchadores.innerHTML = `<div class="combate" id="combateId">
+    fighters.innerHTML = `<div class="combate" id="combateId">
     <div class="player1">
         <img class="imagePlayer" src="img/${p1.name}.png" alt="">
         <p class="pHealth" id="p1Health" >Vida: ${p1.health}</p>
