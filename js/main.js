@@ -2,15 +2,15 @@
 let p1 = "";
 let p2 = "";
 
-const cambiaFase = (destino) => {
-    let arrFase = ['fase1', 'fase2', 'fase3', 'fase4'];
+const changePhase = (destino) => {
+    let arrPhase = ['phase1', 'phase2', 'phase3', 'phase4'];
 
-    arrFase = arrFase.filter((val) => !destino.includes(val));
+    arrPhase = arrPhase.filter((val) => !destino.includes(val));
 
     document.getElementById(destino).style.display = 'block';
 
-    for (let _fase of arrFase) {
-        document.getElementById(_fase).style.display = 'none';
+    for (let _phase of arrPhase) {
+        document.getElementById(_phase).style.display = 'none';
     }
 };
 
@@ -20,10 +20,10 @@ const chooseFighter = (fighter) => {
     } else if (p2 == "") {
         p2 = allPlayers[fighter];
         llenaEquipos();
-        cambiaFase('fase3');
+        changePhase('phase3');
         setTimeout(() => {
             fighting();
-            cambiaFase('fase4');
+            changePhase('phase4');
         }, 1500);
     }
 
@@ -51,7 +51,7 @@ const llenaEquipos = () => {
 
 const fighting = () => {
 
-    let fighters = document.getElementById('fase4');
+    let fighters = document.getElementById('phase4');
 
     fighters.innerHTML = `<div class="combat" id="combateId">
     <div class="player1">
