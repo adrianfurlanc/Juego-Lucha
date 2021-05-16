@@ -1,8 +1,7 @@
 
 # Pokemon Fighting Game
 
-You can view the webpage in the following link: [Pokemon Fighting Game](https://
-adrianfurlanc.github.io/Juego-Lucha)
+You can view the webpage in the following link: https://adrianfurlanc.github.io/Juego-Lucha/
 
 The current repo is a fighting game of Pokemon characters. Hope you enjoy it!
 
