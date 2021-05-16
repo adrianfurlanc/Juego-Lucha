@@ -20,6 +20,7 @@
     font-size: 1.6em;
     padding: 0.5em;
     font-family: "Anton";
+    box-shadow: 0.2em 0.2em;
 }
 
 .fighters{
@@ -112,7 +113,8 @@
 }
 
 #phase1 {
-    background-image: url("../img/PokemonGo.jpg")
+    background-image: url("../img/PokemonGo.jpg");
+    background-repeat: no-repeat;
 }
 
 .sec1 {
@@ -127,4 +129,25 @@
     background-color: #f1dd51;
     opacity: 75%;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.fighters {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 50em;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.classSelect {
+    color: white;
+    background-color: black;
+    margin-top: -5em;
+    font-size: 2.5em;
 }
