@@ -16,6 +16,7 @@
 
 .basicText {
     color: white;
+    cursor: pointer;
 }
 
 .fighters{
@@ -31,6 +32,7 @@
     border: 0.5em solid white;
     margin: 1em;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .picFighter:hover{
@@ -102,3 +104,6 @@
     margin-top: 2.5em;
 }
 
+#pRetry {
+    cursor: pointer;
+}
