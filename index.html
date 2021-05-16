@@ -7,14 +7,16 @@
     <title>Fighting Game</title>
 
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton" />
 </head>
 <body>
 
-    <section class="secvis" id="phase1">
-        <p class="basicText" onclick="changePhase('phase2')">PRESS START BUTTON</p>
+    <section class="secvis sec1" id="phase1">
+        <p class="basicText" onclick="changePhase('phase2')">START HERE</p>
     </section>
 
     <section class="secvis" id="phase2" style="display:none">
+
 
         <div class="fighters">
             <div class="avatar" id="1" onclick="chooseFighter(1)"><img class="picFighter" src="img/Pikachu.png"></div>
@@ -23,6 +25,9 @@
             <div class="avatar" id="4" onclick="chooseFighter(4)"><img class="picFighter" src="img/Charizard.png"></div>
         </div>
 
+        <div class="select">
+            <p class="classSelect" id="selectId">Player 1, choose your fighter:</p>
+        </div>
     </section>
 
     <section class="secvis" id="phase3" style="display:none">
