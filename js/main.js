@@ -17,7 +17,7 @@ const chooseFighter = (fighter) => {
     if (p1 == "") {
         p1 = allPlayers[fighter]
         text = document.getElementById('selectId');
-        text.innerText = "Player 2, choose your fighter";
+        text.innerText = "Player 2, choose your fighter:";
     } else if (p2 == "") {
         p2 = allPlayers[fighter];
         fillTeams();
